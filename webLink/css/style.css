@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_opsz_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body{
+    background: #100B16;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: "Inter", sans-serif;
+
+}
+
+header{
+    background: url("../img/backgrungMobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid #4B2870;
+    border-right: 2px solid #4B2870;
+    color: #91BBE2;
+}
+
+
+h1{
+    font-size: 3rem;
+    border-bottom: 2px solid #4B2870;
+    padding: 10px 12px;
+}
+
+p{
+    border-bottom: 2px solid #4B2870;
+    font-size: 1.5rem;
+    padding: 10px 12px;
+}
+
+ul{
+    display: flex;
+    border-bottom: 2px solid #4B2870;
+}
+
+li{
+    list-style: none;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a{
+    background-color: #CCFF00;
+    padding: 13px;
+    color: #100B16;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 54px;
+    width: 54px;
+}
+
+@media (min-width: 768px)  {
+  header{
+    max-width: 450px;
+  }
+}
